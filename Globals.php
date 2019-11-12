@@ -8,7 +8,7 @@ namespace Coercive\Utility\Globals;
  * @link		https://github.com/Coercive/Globals
  *
  * @author  	Anthony Moral <contact@coercive.fr>
- * @copyright   2016 - 2018 Anthony Moral
+ * @copyright   2019 Anthony Moral
  * @license 	MIT
  *
  * @method 		Globals|mixed 	COOKIE($name = null, $value = null)
@@ -389,5 +389,4 @@ class Globals
 		$this->_iFilterType = FILTER_DEFAULT;
 		return $this;
 	}
-
 }
