@@ -5,7 +5,7 @@ namespace Coercive\Utility\Globals;
  * Globals
  *
  * @package 	Coercive\Utility\Globals
- * @link		@link https://github.com/Coercive/Globals
+ * @link		https://github.com/Coercive/Globals
  *
  * @author  	Anthony Moral <contact@coercive.fr>
  * @copyright   2016 - 2018 Anthony Moral
@@ -20,8 +20,8 @@ namespace Coercive\Utility\Globals;
  * @method 		Globals|mixed 	SERVER($name = null, $value = null)
  * @method 		Globals|mixed 	SESSION($name = null, $value = null)
  */
-class Globals {
-
+class Globals
+{
 	const FILTER_OCTAL = 1;
 
 	/** @var string */
@@ -97,7 +97,7 @@ class Globals {
 		}
 
 		# STRING
-		return filter_var($item, FILTER_SANITIZE_SPECIAL_CHARS);
+		return filter_var($item, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 	}
 
 	/**
